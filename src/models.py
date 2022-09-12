@@ -52,7 +52,6 @@ def start_analysis(source_code_url, scanner_name, language):
         cmd = f'{brakeman_scanner_path} -p {scan_path} -q -o brakeman-result-{time}.json . '
         cp = subprocess.run(cmd, shell=True)
     except subprocess.CalledProcessError as e:
-        # print(source_code_url, scanner_name, language)
         raise e
     except Exception as e:
         raise e
