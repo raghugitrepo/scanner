@@ -56,7 +56,7 @@ docker run -d -p 80:80 scanner
 ```bash 
 curl localhost:80/docs # swagger api 
 
-
+### Below are api endpoints 
 Method: POST
 Endpoint: localhost/scan
 Headers: 
