@@ -11,7 +11,7 @@ import shutil
 from fastapi import HTTPException
 
 scan_path = 'scan-path'
-brakeman_scanner_path = 'scanner/brakeman'
+brakeman_scanner_path = 'brakeman'
 scanners_list = {'brakeman': ['ruby']}
 
 
