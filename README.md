@@ -1,6 +1,6 @@
 # scanner
 
-This is a simple fast api framework 
+This is a simple Python fast api framework 
 
 ## Local development for macOS
 ### Environment setup
