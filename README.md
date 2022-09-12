@@ -39,6 +39,8 @@ open browser and access  localhost:8000/docs
 
 ### Testing
 
+
+export PYTHONPATH="${PYTHONPATH}:${path_until_project_scanner}"
 ```bash
 # Run the unit tests
 $ pytest tests/ut.py
