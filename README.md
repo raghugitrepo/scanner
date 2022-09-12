@@ -45,3 +45,44 @@ $ pytest tests/ut.py
 # Run the end-to-end tests
 $ pytest tests/e2e.py
 ```
+
+### Building Dockerimage
+```bash
+docker build -t scanner . 
+
+docker run -d -p 80:80 scanner
+```
+### Access the api
+```bash 
+curl localhost:80/docs # swagger api 
+
+
+Method: POST
+Endpoint: localhost/scan
+Headers: 
+application/json
+
+Request Payload: 
+{
+    "scanner_name": "Brakeman",
+    "language": "Ruby",
+    "source_code_url": "https://github.com/manojbinjola/ruby-project"
+}
+
+Response status code: 200
+
+Response body: 
+
+{
+    "report_id": 1663016631,
+    "message": "success"
+}
+
+Method: Get
+Endpoint: localhost/scan/reports/{report_id}
+Headers: 
+application/json
+Response status code: 200
+Response body: 
+
+Json report
