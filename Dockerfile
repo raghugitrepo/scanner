@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64/v8 python:3.8-alpine
+FROM python:3.8-alpine
 
 ARG USER=scan
 ARG GROUP=scan
