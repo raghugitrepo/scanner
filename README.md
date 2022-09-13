@@ -59,8 +59,6 @@ $ pytest tests/e2e.py
 
 I have m1 mac so the platform the image built is  --platform=linux/arm64/v8 (This is tested as working)
 
-If you have amd64 arch change  --platform=linux/amd64 in Dockerfile. (This is not tested since I dont have machine)
-
 ```bash
 docker build -t scanner . 
 
