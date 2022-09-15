@@ -54,15 +54,20 @@ $ pytest tests/e2e.py
 
 ### Building Dockerimage
 
-** NOTE **
-
-
-I have m1 mac so the platform the image built is  --platform=linux/arm64/v8 (This is tested as working)
+** NOTE ** Port 80 is exposed in container. where as for local build app runs on 8000 port 
 
 ```bash
 docker build -t scanner . 
 
 docker run -d -p 80:80 scanner
+```
+
+### Run container from docker hub 
+```bash
+docker pull raghupokuri/scanner:latest
+
+docker run -d -p 80:80 raghupokuri/scanner
+
 ```
 ### Access the api
 ```bash 
